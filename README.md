@@ -8,3 +8,6 @@
 
 ### Terraform 
 1. [Project-ShopFlow: Multi-Tier Cloud Infrastructure & CICD Pipeline](./Terraform/Project-ShopFlow%3A%20Multi-Tier%20Cloud%20Infrastructure%20%26%20CICD%20Pipeline/README.md)
+
+### Kubernetes
+1. [Project:Enterprise Cloud-Native WordPress Deployment on AWS Self-Managed Kubernetes](./Kubernetes/Cloud-Native%20WordPress%20Deployment%20on%20AWS%20Self-Managed%20Kubernetes%20Cluster)
