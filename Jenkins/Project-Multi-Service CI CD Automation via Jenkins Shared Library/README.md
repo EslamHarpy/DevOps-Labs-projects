@@ -17,7 +17,18 @@ The following diagram illustrates the interaction between the centralized Shared
   <em><b>Figure 1:</b> Centralized Shared Library Architecture</em>
 </p>
 
-## 3. Key Features
+## 3. GitHub Repositories
+
+---
+
+* **Shared Library Repo:** [jenkins-shared-library](https://github.com/EslamHarpy/jenkins-shared-library)
+* **petclinic-service-A:** [spring-petclinic-service-A](https://github.com/EslamHarpy/service-a)
+* **petclinic-service-B:** [spring-petclinic-service-B](https://github.com/EslamHarpy/service-b)
+* **petclinic-service-C:** [spring-petclinic-service-C](https://github.com/EslamHarpy/service-c)
+
+---
+
+## 4. Key Features
 *   **DRY Principle (Don't Repeat Yourself):** Instead of defining 3 separate pipelines, we define one single logic in the library to manage all services.
 *   **Modular Pipeline:** A single Groovy script (`petclinicPipeline.groovy`) handles 10 dynamic stages, ensuring consistent environments across the organization.
 *   **Dynamic Tagging:** Images are tagged uniquely per service (e.g., `service-a-latest`, `service-b-latest`) and stored in a unified AWS ECR repository.
@@ -25,7 +36,7 @@ The following diagram illustrates the interaction between the centralized Shared
 
 ---
 
-## 4. Prerequisites
+## 5. Prerequisites
 Before implementing this modular architecture, ensure the following are configured:
 
 ### Local Infrastructure
@@ -44,7 +55,7 @@ Before implementing this modular architecture, ensure the following are configur
 
 ---
 
-## 5. Environment Preparation & Infrastructure Setup
+## 6. Environment Preparation & Infrastructure Setup
 
 This section details the steps taken to prepare the local environment and the AWS cloud infrastructure to support a multi-service architecture.
 
@@ -100,7 +111,7 @@ The library must be registered globally so that individual Pipeline Jobs can "tr
 
 ---
 
-## 6. Pipeline Implementation (Shared Library Logic)
+## 7. Pipeline Implementation (Shared Library Logic)
 
 The heart of this automation is the `petclinicPipeline.groovy` script. It defines a standardized lifecycle that all microservices adhere to, ensuring that security, testing, and deployment patterns are identical across the environment.
 
@@ -237,7 +248,7 @@ petclinicPipeline(
 
 ---
 
-## 7. Pipeline Execution & Verification
+## 8. Pipeline Execution & Verification
 
 In this final section, we demonstrate the successful orchestration of all three services through the Jenkins dashboard and verify their deployment on the host machine.
 
@@ -301,6 +312,6 @@ The final proof of success is accessing the applications via a web browser. Each
 
 --- 
 
-### 8. Conclusion
+### 9. Conclusion
 By implementing a **Jenkins Shared Library**, we successfully transitioned from repetitive, error-prone pipelines to a scalable, professional automation framework. This architecture allows the organization to onboard new services in minutes by simply adding a two-line `Jenkinsfile`, ensuring high-velocity delivery with enterprise-grade consistency.
  
