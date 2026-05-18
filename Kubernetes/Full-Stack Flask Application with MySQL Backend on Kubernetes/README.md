@@ -627,5 +627,4 @@ http://<Your-Worker-Node-IP>:<Allocated-NodePort>/
 
 This deployment represents a complete enterprise architecture pattern for microservice-oriented frameworks run within managed container systems. By utilizing explicit decoupled structures—such as StatefulSet systems for structural transactional databases, programmatic InitContainers to safely handle container startup timing, and robust Network Policies—the environment provides optimal reliability and fault isolation capabilities under high-volume load environments.
 
-```
 
