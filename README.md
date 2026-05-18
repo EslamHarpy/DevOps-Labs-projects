@@ -11,4 +11,4 @@
 
 ### Kubernetes
 1. [Project:Enterprise Cloud-Native WordPress Deployment on AWS Self-Managed Kubernetes](./Kubernetes/Cloud-Native%20WordPress%20Deployment%20on%20AWS%20Self-Managed%20Kubernetes%20Cluster)
-2. [Project:MongoDB & Mongo-Express on Kubernetes with AWS EBS Persistent Storage](./Kubernetes/https://github.com/EslamHarpy/DevOps-Labs-projects/tree/main/Kubernetes/MongoDB%20%26%20Mongo-Express%20on%20Kubernetes%20with%20AWS%20EBS%20Persistent%20Storage)
+2. [Project:MongoDB & Mongo-Express on Kubernetes with AWS EBS Persistent Storage](./Kubernetes/MongoDB%20%26%20Mongo-Express%20on%20Kubernetes%20with%20AWS%20EBS%20Persistent%20Storage)
