@@ -21,7 +21,7 @@ The project reference architecture implements a secure and isolated infrastructu
 <p align="center">
   <img src="./Screenshots/1-csi-drivers-verify.PNG" width="100%">
   <br>
-  <em><b>Figure 1:</b> CSI Drivers Verification </em>
+  <em><b>Figure 1:</b> Project Archticture </em>
 </p>
 
 ---
@@ -70,7 +70,12 @@ kubectl create secret generic aws-secret \
 4. Install the **AWS EBS CSI Driver** onto your cluster.
 
 ### AWS IAM Configuration Reference:
-![AWS IAM Policy Setup](./images/aws-iam-setup.png)
+<p align="center">
+  <img src="./Screenshots/aws-iam-setup.png" width="100%">
+  <br>
+  <em><b>Figure 2:</b> AWS IAM Policy Setup </em>
+</p>
+
 
 ### Step 2: Configure Database Secrets
 
@@ -142,7 +147,12 @@ kubectl apply -f mongodb-pvc.yaml
 ```
 
 ### Initial Storage State (Waiting for Consumer):
-![Kubernetes PVC Pending Status](./images/k8s-pvc-pending.png)
+
+<p align="center">
+  <img src="./Screenshots/Screenshots/k8s-pvc-pending.png" width="100%">
+  <br>
+  <em><b>Figure 3:</b> Kubernetes PVC Pending Status </em>
+</p>
 
 ### Step 4: Deploy MongoDB (Database)
 
@@ -210,9 +220,17 @@ kubectl apply -f mongodb-svc.yaml
 
 ```
 ### Dynamic EBS Volume Provisioning Verification:
-![Kubernetes PVC Bound Status](./images/k8s-pvc-bound.png)
-![AWS Dynamic EBS Volume Created](./images/aws-ebs-volume.png)
 
+<p align="center">
+  <img src="./Screenshots/k8s-pvc-bound.png" width="100%">
+  <br>
+  <em><b>Figure 4:</b> Kubernetes PVC Bound Status </em>
+</p>
+<p align="center">
+  <img src="./Screenshots/aws-ebs-volume.png" width="100%">
+  <br>
+  <em><b>Figure 5:</b> AWS Dynamic EBS Volume Created </em>
+</p>
 
 ### Step 5: Deploy Mongo-Express (Web Interface)
 
@@ -329,7 +347,11 @@ Once everything displays `Running` and the PVC status changes to `Bound`, you ca
 
 Once authenticated, you will be redirected to the main administrative dashboard showing successful connectivity to the backend MongoDB instance:
 
-![Mongo Express Dashboard Success](./images/mongo-express-dashboard.png)
+<p align="center">
+  <img src="./Screenshots/mongo-express-dashboard.png" width="100%">
+  <br>
+  <em><b>Figure 6:</b> Mongo Express Dashboard Success </em>
+</p>
 
 ---
 ## 🎯 Conclusion
