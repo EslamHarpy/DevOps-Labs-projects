@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+  namespace: default
+  labels:
+    app: flask-bucketlist
+    tier: frontend
+spec:
+  replicas: 2 
+  selector:
+    matchLabels:
+      app: flask-app
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+     
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - name: flaskapp
+          image: eslamharpy/flaskapp:v2
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5002
+          env:
+           
+            - name: MYSQL_DATABASE_USER
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret
+                  key: MYSQL_DATABASE_USER
+            
+            - name: MYSQL_DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret
+                  key: MYSQL_DATABASE_PASSWORD
+           
+            - name: MYSQL_DATABASE_DB
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: MYSQL_DATABASE_DB
+           
+            - name: MYSQL_DATABASE_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: MYSQL_DATABASE_HOST
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "300m"
+          
+          startupProbe:
+            httpGet:
+              path: /
+              port: 5002
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 6
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 5002
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 5002
+            initialDelaySeconds: 15
+            periodSeconds: 15
