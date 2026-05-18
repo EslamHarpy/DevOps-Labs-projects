@@ -19,7 +19,7 @@ The project reference architecture implements a secure and isolated infrastructu
 * **Configuration & Security:** Decoupled sensitive data (credentials) using Kubernetes `Secrets` and environment configurations via `ConfigMaps`.
 
 <p align="center">
-  <img src="./Screenshots/1-csi-drivers-verify.PNG" width="100%">
+  <img src="./Screenshots/0-Project-Archticture2.png" width="100%">
   <br>
   <em><b>Figure 1:</b> Project Archticture </em>
 </p>
