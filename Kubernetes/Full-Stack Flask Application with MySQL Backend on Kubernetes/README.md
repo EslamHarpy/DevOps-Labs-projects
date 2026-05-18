@@ -616,9 +616,9 @@ http://<Your-Worker-Node-IP>:<Allocated-NodePort>/
 ```
 
 <p align="center">
-  <img src="./Screenshots/APP-Running.png" width="100%">
+  <img src="./Screenshots/APP-Running.PNG" width="100%">
   <br>
-  <em><b>Figure 1:</b> Applicatyion Dashboard </em>
+  <em><b>Figure 4:</b> Applicatyion Dashboard </em>
 </p>
 
 ---
