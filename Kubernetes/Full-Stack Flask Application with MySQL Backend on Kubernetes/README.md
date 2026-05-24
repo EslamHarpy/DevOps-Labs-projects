@@ -52,7 +52,7 @@ flaskapp-project/
 4. **State Isolation & Storage Mapping:** Database profiles run systematically inside a deterministic `StatefulSet`. This guarantees constant volume mapping variables and state indexing keys regardless of physical pod lifecycle restarts.
 
 <p align="center">
-  <img src="./Screenshots/project-archticture.jpg" width="100%">
+  <img src="./Screenshots/project-architecture.jpg" width="100%">
   <br>
   <em><b>Figure 1:</b> Project Archticture </em>
 </p>
