@@ -220,7 +220,7 @@ To interface with the running cluster deployment outside your host network bound
 1. Retrieve your target host platform external IP (e.g., **AWS EC2 Public IPv4**).
 2. Point your remote endpoint client to: `http://<YOUR_AWS_PUBLIC_IP>:8080/`.
 <p align="center">
-  <img src=".website_verify.png" width="100%">
+  <img src="./website_verify.png" width="100%">
   <br>
   <em><b>Figure 1:</b> WebSite Verify </em>
 </p>
