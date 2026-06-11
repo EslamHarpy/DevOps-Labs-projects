@@ -174,7 +174,7 @@ docker run -d \
 <p align="center">
   <img src="./Screenshots/1-docker_ps_verify.png" width="100%">
   <br>
-  <em><b>Figure 1:</b> Container Run Verify </em>
+  <em><b>Figure 2:</b> Container Run Verify </em>
 </p>
 
 ### 🔹 Web Application Interface
