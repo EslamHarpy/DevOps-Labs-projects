@@ -8,17 +8,11 @@ An enterprise-grade, production-hardened deployment of the classic **Spring PetC
 
 The containerized environment utilizes an isolated networking layer, optimized memory footprints, and service health checks to decouple component initialization and lifecycle management.
 
-```mermaid
-graph LR
-    User([Client Browser]) -->|Port 8080| App[Spring Boot Container]
-    App -->|Internal DNS Routing| DB[(MySQL 5.7 Database)]
-    
-    subgraph "Isolated Docker Network (petclinic-net)"
-    App
-    DB
-    end
-
-```
+<p align="center">
+  <img src="./project_diagram.png" width="100%">
+  <br>
+  <em><b>Figure 1:</b> Project Diagram </em>
+</p>
 
 | Component | Technology | Optimization Applied | Role |
 | --- | --- | --- | --- |
@@ -222,7 +216,7 @@ To interface with the running cluster deployment outside your host network bound
 <p align="center">
   <img src="./website_verify.png" width="100%">
   <br>
-  <em><b>Figure 1:</b> WebSite Verify </em>
+  <em><b>Figure 2:</b> WebSite Verify </em>
 </p>
 
 4. **AWS Security Group Requirement:** Verify that the bound infrastructure Security Group includes an **Inbound Rule** authorizing TCP ingress traffic target over destination port `8080`.
