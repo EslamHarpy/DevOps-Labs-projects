@@ -20,3 +20,6 @@
 1. [Project:Enterprise Cloud-Native WordPress Deployment on AWS Self-Managed Kubernetes](./Kubernetes/Cloud-Native%20WordPress%20Deployment%20on%20AWS%20Self-Managed%20Kubernetes%20Cluster)
 2. [Project:MongoDB & Mongo-Express on Kubernetes with AWS EBS Persistent Storage](./Kubernetes/MongoDB%20%26%20Mongo-Express%20on%20Kubernetes%20with%20AWS%20EBS%20Persistent%20Storage)
 3. [Project:Full-Stack Flask Application with MySQL Backend on Kubernetes](./Kubernetes/Full-Stack%20Flask%20Application%20with%20MySQL%20Backend%20on%20Kubernetes)
+
+### prometheus and grafana
+1. [Task 1:Enterprise Installation, Configuration, and Environment Validation of Prometheus](./Prometheus%26Grafana/Task1%3AEnterprise%20Installation%2C%20Configuration%2C%20and%20Environment%20Validation%20of%20Prometheus)
