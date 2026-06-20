@@ -5,16 +5,17 @@
 <p align="left">
   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white" alt="Prometheus">
   <img src="https://img.shields.io/badge/Linux_CentOS-004A7F?style=for-the-badge&logo=centos&logoColor=white" alt="CentOS">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
   <img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS EC2">
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
 </p>
 
 ---
 
 ## 🗺️ System Architecture
 
-This lab demonstrates an enterprise-grade, pull-based monitoring system architecture. The centralized Prometheus instance scrapes system-level and application-level metrics across multiple isolated environments (On-Premise CentOS VMs and Cloud AWS EC2 instances).
+This lab demonstrates an enterprise-grade, pull-based monitoring system architecture. The centralized Prometheus instance scrapes system-level, container-level, and application-level metrics across multiple isolated environments (On-Premise CentOS VMs, Containerized environments via Docker, and Cloud AWS EC2 instances).
 <p align="center">
   <img src="./Screenshots/project_diagram.png" width="100%">
   <br>
@@ -27,9 +28,12 @@ This lab demonstrates an enterprise-grade, pull-based monitoring system architec
 
 | Tool | Version | Default Port | Role in Architecture |
 | --- | --- | --- | --- |
-| **Prometheus** | v3.2.1 (Stable Release) | `9090` | Centralized time-series database & scraping engine |
+| **Prometheus** | v3.2.1 (Stable) | `9090` | Centralized time-series database & scraping engine |
 | **Node Exporter** | v1.8.2 | `9100` | Machine metrics collector (CPU, Memory, Disk, Network) |
 | **Python / Flask** | Custom App | `5000` | Simulated microservice exposing custom HTTP counters |
+| **Node.js App** | Custom App | `3000` (External) / `8000` (Internal) | Containerized Node.js service exporting native metrics |
+| **Java Spring Boot** | Custom App | `8080` (External) / `6666` (Internal) | Microservice exposing Actuator Prometheus telemetry |
+| **cAdvisor** | v0.49.1 | `8085` (External) / `8080` (Internal) | Analyzes and exposes resource usage from running containers |
 | **Firewalld (CentOS)** | Native | — | Secure perimeter control managing port ingress/egress |
 
 ---
@@ -39,9 +43,7 @@ This lab demonstrates an enterprise-grade, pull-based monitoring system architec
 ### 1️⃣ Server A: Prometheus Core Server (Central Engine)
 
 #### A. Pre-requisites & User Provisioning
-
 Create a dedicated system user account without login shells (`/sbin/nologin`) to safely isolate the Prometheus service process execution context.
-
 ```bash
 # Ensure download utilities are available
 sudo dnf install -y wget tar
@@ -124,6 +126,7 @@ sudo systemctl enable prometheus
   <em><b>Figure 2: </b> Prometheus Status Check </em>
 </p>
 
+
 ---
 
 ### 2️⃣ Server B & C: Node Exporter Implementation (Other VM & AWS EC2)
@@ -188,7 +191,7 @@ sudo systemctl enable node_exporter
 #### 📸 Verification Checklist
 
 * Run `sudo systemctl status node_exporter` on both nodes.
-  
+
 <p align="center">
   <img src="./Screenshots/node_exporter_status_check_on_other_vm.png" width="100%">
   <br>
@@ -212,11 +215,15 @@ sudo dnf install -y python3 python3-pip
 pip3 install flask prometheus_client
 
 ```
-#### B. Application Configuration 
+
+#### B. Application Configuration
+
 ```bash
 sudo nano python-app.py
+
 ```
-```ini
+
+```python
 from flask import Flask, Response
 from prometheus_client import Counter, generate_latest, CONTENT_TYPE_LATEST
 
@@ -232,7 +239,6 @@ def home():
     requests_total.inc()
     return "Hello ITI to python app with prometheus monitoring"
 
-
 @app.route('/metrics')
 def metrics():
     return Response(
@@ -240,18 +246,18 @@ def metrics():
         mimetype=CONTENT_TYPE_LATEST
     )
 
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 ```
 
-#### C. Activating Application 
+#### C. Activating Application
 
 ```bash
 sudo firewall-cmd --permanent --add-port=5000/tcp
 sudo firewall-cmd --reload
 
-#run the application 
+# Run the application 
 python python-app.py
 
 ```
@@ -265,6 +271,115 @@ python python-app.py
   <br>
   <em><b>Figure 5:</b> Application Run Verify</em>
 </p>
+
+---
+
+### 4️⃣ Server E: Containerized Environment & Microservices (Docker Node)
+
+#### A. Pre-requisites & Docker Engine Provisioning
+
+Install Docker Engine and Docker Compose Plugin on the targeted CentOS Node.
+
+```bash
+# Install base utilities
+sudo dnf install -y yum-utils git
+
+# Set up the stable repository
+sudo yum-config-manager --add-repo [https://download.docker.com/linux/centos/docker-ce.repo](https://download.docker.com/linux/centos/docker-ce.repo)
+
+# Install Docker packages
+sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+# Activate Engine
+sudo systemctl start docker
+sudo systemctl enable docker
+
+```
+
+#### B. Custom Dockerfile Instrumentation for Node.js App
+
+Since the retrieved Node.js repository lacks a native Dockerfile, a custom containerization layer must be engineered:
+
+```bash
+cd ~
+git clone https://github.com/HaythamMohamd/nodejs-app-for-prometheus.git
+cd nodejs-app-for-prometheus
+nano Dockerfile
+
+```
+
+```dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8000
+CMD ["node", "index.js"]
+
+```
+
+#### C. Multi-Service Declarative Orchestration
+
+Clone the Java Spring Boot source code and provision the orchestrator stack via a unified `docker-compose.yml` configuration at the root directory:
+
+```bash
+cd ~
+git clone https://github.com/HaythamMohamd/spring-prometheus-demo.git
+nano docker-compose.yml
+
+```
+
+```yaml
+services:
+  # 1. Java Spring Boot Application (Listening internally on 6666)
+  java-app:
+    build: ./spring-prometheus-demo
+    container_name: java-spring-app
+    ports:
+      - "6666:6666"
+    restart: always
+
+  # 2. Node.js Application (Listening internally on 8000)
+  nodejs-app:
+    build: ./nodejs-app-for-prometheus
+    container_name: nodejs-prometheus-app
+    ports:
+      - "3000:8000"
+    restart: always
+
+  # 3. Google cAdvisor (Container Resource Telemetry Engine)
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.49.1
+    container_name: cadvisor
+    ports:
+      - "8085:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    devices:
+      - /dev/kmsg
+    privileged: true
+    restart: always
+
+```
+
+#### D. Operational Deployment & Perimeter Control
+
+```bash
+# Deploy stack in detached background mode
+sudo docker compose up --build -d
+
+# Open explicit Ingress Paths for Prometheus Scraping Engines
+sudo firewall-cmd --permanent --zone=public --add-port=3000/tcp
+sudo firewall-cmd --permanent --zone=public --add-port=6666/tcp
+sudo firewall-cmd --permanent --zone=public --add-port=8085/tcp
+sudo firewall-cmd --reload
+
+```
 
 ---
 
@@ -314,6 +429,21 @@ scrape_configs:
     static_configs:
       - targets: ['<PUBLIC_OR_PRIVATE_IP_OF_EC2>:9100']
 
+  - job_name: 'containerized_nodejs_app'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['<IP_OF_DOCKER_NODE_VM>:3000']
+
+  - job_name: 'containerized_java_spring_boot_app'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['<IP_OF_DOCKER_NODE_VM>:6666']
+
+  - job_name: 'containerized_cadvisor_metrics'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['<IP_OF_DOCKER_NODE_VM>:8085']
+
 ```
 
 Apply modifications smoothly:
@@ -341,10 +471,14 @@ This enterprise architecture simulation demonstrates a secure and production-rea
 
 ### Key Accomplishments:
 
-* **Secured System Access Control:** Isolated all system daemons using minimal privileges (`/sbin/nologin` users), ensuring strong process isolation.
+* **Secured System Access Control:** Isolated all native system daemons using minimal privileges (`/sbin/nologin` users), ensuring strong process isolation.
 * **Network Infrastructure Security:** Configured explicit ingress port configurations using native `firewalld` filtering mechanisms along with public cloud security groups.
-* **Multi-Environment Aggregation:** Combined multi-source hardware footprints (On-Prem VMs + Cloud instances) alongside native app context tracking into a standardized telemetry control interface.
----
-**Developed by:** [Eslam Harpy](https://github.com/EslamHarpy)
-*Infrastructure & DevOps Engineer*
+* **Microservices & Container Telemetry:** Effectively integrated Google cAdvisor alongside runtime environment hooks to continuously map internal app logic out of standard network bridges.
+* **Code-Level Alignment:** Identified embedded runtime bindings within source objects (such as Spring Boot Tomcat on port `6666` and Node.js on port `8000`) and correctly unified them across declarative orchestration configurations.
+* **Multi-Environment Aggregation:** Combined multi-source hardware footprints (On-Prem VMs + Cloud instances + Containerized Clusters) into a standardized telemetry control interface.
 
+---
+
+**Developed by:** [Eslam Harpy](https://github.com/EslamHarpy)
+
+*Infrastructure & DevOps Engineer*
