@@ -38,3 +38,18 @@ scrape_configs:
   - job_name: 'ec2_node_exporter'
     static_configs:
       - targets: ['<PUBLIC_OR_PRIVATE_IP_OF_EC2>:9100']
+
+  - job_name: 'containerized_nodejs_app'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['<IP_OF_DOCKER_NODE_VM>:3000']
+
+  - job_name: 'containerized_java_spring_boot_app'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['<IP_OF_DOCKER_NODE_VM>:6666']
+
+  - job_name: 'containerized_cadvisor_metrics'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['<IP_OF_DOCKER_NODE_VM>:8085']
