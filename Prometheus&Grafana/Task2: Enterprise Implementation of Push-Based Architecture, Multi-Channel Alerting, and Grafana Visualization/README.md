@@ -267,7 +267,7 @@ sudo systemctl stop node_exporter
   <em><b>Figure 5:</b> Alert Dashboard   </em>
 </p>
 <p align="center">
-  <img src="./Screenshots/telegram" width="100%">
+  <img src="./Screenshots/telegram.png" width="100%">
   <br>
   <em><b>Figure 6:</b> Telegram Alerts   </em>
 </p>
