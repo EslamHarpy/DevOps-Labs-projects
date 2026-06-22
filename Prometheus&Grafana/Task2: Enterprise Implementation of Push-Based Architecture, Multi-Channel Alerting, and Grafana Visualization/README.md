@@ -137,18 +137,6 @@ sudo ss -tulpn | grep 9091
   <em><b>Figure 2:</b> Push-Gatway Port Verify </em>
 </p>
 
-* Validate raw local web engine functionality:
-
-```bash
-curl http://localhost:9091/metrics
-
-```
-
-<p align="center">
-  <img src="./Screenshots/pushgatway_port_verify.png" width="100%">
-  <br>
-  <em><b>Figure 2:</b> Push-Gatway Port Verify </em>
-</p>
 
 #### D. Production-Grade Telemetry Injection Script
 
