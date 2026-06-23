@@ -23,3 +23,5 @@
 
 ### prometheus and grafana
 1. [Task 1:Enterprise Installation, Configuration, and Environment Validation of Prometheus](./Prometheus%26Grafana/Task1%3AEnterprise%20Installation%2C%20Configuration%2C%20and%20Environment%20Validation%20of%20Prometheus)
+2. [Task2: Enterprise Implementation of Push-Based Architecture, Multi-Channel Alerting, and Grafana Visualization](./Prometheus%26Grafana/Task2%3A%20Enterprise%20Implementation%20of%20Push-Based%20Architecture%2C%20Multi-Channel%20Alerting%2C%20and%20Grafana%20Visualization)
+3. [Project: Cloud-Native Node.js Infrastructure Monitoring via Prometheus Operator & Grafana](./Prometheus%26Grafana/Project%3A%20Cloud-Native%20Node.js%20Infrastructure%20Monitoring%20via%20Prometheus%20Operator%20%26%20Grafana)
