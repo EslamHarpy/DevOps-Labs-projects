@@ -300,7 +300,7 @@ kubectl apply -f k8s/nodejs-monitor.yaml
 <p align="center">
    <img src="./Screenshots/Prometheus_Targets_Healthy.png" width="100%">
   <br>
-  <em><b>Figure 2:</b> Prometheus Targets Healthy </em>
+  <em><b>Figure 4:</b> Prometheus Targets Healthy </em>
 </p>
 
 
@@ -348,7 +348,7 @@ kubectl apply -f k8s/nodejs-alert.yaml
 <p align="center">
    <img src="./Screenshots/Prometheus_Rules_Registered.png" width="100%">
   <br>
-  <em><b>Figure 2:</b> Prometheus Rules Registered </em>
+  <em><b>Figure 5:</b> Prometheus Rules Registered </em>
 </p>
 
 
@@ -417,7 +417,7 @@ kubectl get alertmanagerconfig -n monitoring
 <p align="center">
   <img src="./Screenshots/alertmanagerconfig.png" width="100%">
   <br>
-  <em><b>Figure 2:</b> Alertmanagerconfig Verify </em>
+  <em><b>Figure 6:</b> Alertmanagerconfig Verify </em>
 </p> 
 
 
@@ -439,7 +439,7 @@ chmod +x scripts/load-test.sh
 <p align="center">
   <img src="./Screenshots/Load_Test_Script_Active.png" width="100%">
   <br>
-  <em><b>Figure 2:</b> Load Test Script Active </em>
+  <em><b>Figure 7:</b> Load Test Script Active </em>
 </p>
 
 ### 2. Verify Live Analytics Spikes in Grafana
@@ -449,7 +449,7 @@ chmod +x scripts/load-test.sh
 <p align="center">
   <img src="./Screenshots/Grafana_Dashboard_Metrics_Spike.png" width="100%">
   <br>
-  <em><b>Figure 2:</b> Grafana Dashboard Metrics Spike </em>
+  <em><b>Figure 8:</b> Grafana Dashboard Metrics Spike </em>
 </p>
 
 ### 3. Verify Active State Transition on Prometheus
@@ -459,7 +459,7 @@ chmod +x scripts/load-test.sh
 <p align="center">
   <img src="./Screenshots/Prometheus_Alert_Firing.png" width="100%">
   <br>
-  <em><b>Figure 2:</b> Prometheus_Alert Firing </em>
+  <em><b>Figure 9:</b> Prometheus_Alert Firing </em>
 </p>
 
 ### 4. Catch the Slack ChatOps Incident Notification
@@ -469,7 +469,7 @@ chmod +x scripts/load-test.sh
 <p align="center">
   <img src="./Screenshots/Slack_Notification_Received.png" width="100%">
   <br>
-  <em><b>Figure 2:</b> Slack Notification Received  </em>
+  <em><b>Figure 10:</b> Slack Notification Received  </em>
 </p>
 
 ---
