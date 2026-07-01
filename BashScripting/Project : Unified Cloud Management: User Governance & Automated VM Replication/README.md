@@ -489,7 +489,7 @@ To automate our lifecycle engine on a persistent loop every 2 minutes for testin
 <p align="center">
   <img src="./Screenshots/s3_objects.png" width="100%">
   <br>
-  <em><b>Figure 6:</b> S3 Bucket Objects Verify </em>
+  <em><b>Figure 7:</b> S3 Bucket Objects Verify </em>
 </p>
 
 
@@ -502,7 +502,7 @@ This system exemplifies efficient infrastructure automation by combining clean f
 
 By applying modern system administration design patterns—such as decoupling application scripts, eliminating hardcoded server environment credentials through IAM Roles, and deploying strict background error log checking—the entire system maintains reliability and scales seamlessly without modifying its foundational logic.
 
-```
+---
 
 ## 👨‍💻 Engineering Author
 
