@@ -25,3 +25,6 @@
 1. [Task 1:Enterprise Installation, Configuration, and Environment Validation of Prometheus](./Prometheus%26Grafana/Task1%3AEnterprise%20Installation%2C%20Configuration%2C%20and%20Environment%20Validation%20of%20Prometheus)
 2. [Task2: Enterprise Implementation of Push-Based Architecture, Multi-Channel Alerting, and Grafana Visualization](./Prometheus%26Grafana/Task2%3A%20Enterprise%20Implementation%20of%20Push-Based%20Architecture%2C%20Multi-Channel%20Alerting%2C%20and%20Grafana%20Visualization)
 3. [Project: Cloud-Native Node.js Infrastructure Monitoring via Prometheus Operator & Grafana](./Prometheus%26Grafana/Project%3A%20Cloud-Native%20Node.js%20Infrastructure%20Monitoring%20via%20Prometheus%20Operator%20%26%20Grafana)
+
+### Bash Scripting 
+1. [Project : Unified Cloud Management: User Governance & Automated VM Replication](./BashScripting/Project%20%3A%20Unified%20Cloud%20Management%3A%20User%20Governance%20%26%20Automated%20VM%20Replication)
