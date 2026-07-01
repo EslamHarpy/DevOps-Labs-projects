@@ -1,0 +1,226 @@
+[Wed Jul  1 15:01:11 UTC 2026] Error: Please, Enter the directory that you want to backup
+[Wed Jul  1 15:20:43 UTC 2026] Backup completed successfully. Backup file: /home/ubuntu/bash-project/backup/file-backup-07-01-26_15_20_43.tar.gz
+[Wed Jul  1 15:53:49 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 15:53:49 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_15_53_49.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 15:53:49 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 1.5 KiB/1.5 KiB (19.1 KiB/s) with 1 file(s) remainingupload: backup/file-backup-07-01-26_15_53_49.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_15_53_49.tar.gz
+[Wed Jul  1 15:53:50 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:04:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:04:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_04_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:04:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 1.5 KiB/1.5 KiB (18.6 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_04_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_04_01.tar.gz
+[Wed Jul  1 16:04:02 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:06:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:06:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_06_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:06:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 1.5 KiB/1.5 KiB (14.4 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_06_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_06_01.tar.gz
+[Wed Jul  1 16:06:04 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:08:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:08:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_08_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:08:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 1.5 KiB/1.5 KiB (18.0 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_08_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_08_01.tar.gz
+[Wed Jul  1 16:08:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:10:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:10:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_10_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:10:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 2.4 KiB/2.4 KiB (15.2 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_10_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_10_01.tar.gz
+[Wed Jul  1 16:10:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:12:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:12:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_12_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:12:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 2.8 KiB/2.8 KiB (29.4 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_12_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_12_01.tar.gz
+[Wed Jul  1 16:12:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:14:02 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:14:02 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_14_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:14:02 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 2.9 KiB/2.9 KiB (21.9 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_14_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_14_01.tar.gz
+[Wed Jul  1 16:14:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:16:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:16:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_16_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:16:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (33.4 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_16_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_16_01.tar.gz
+[Wed Jul  1 16:16:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:18:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:18:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_18_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:18:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (21.7 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_18_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_18_01.tar.gz
+[Wed Jul  1 16:18:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:20:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:20:02 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_20_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:20:02 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.2 KiB/3.2 KiB (37.2 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_20_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_20_01.tar.gz
+[Wed Jul  1 16:20:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:21:08 UTC 2026] INFO: Manual backup requested via Main Menu
+[Wed Jul  1 16:21:08 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_21_08.tar.gz
+Completed 3.1 KiB/3.1 KiB (25.2 KiB/s) with 1 file(s) remainingupload: ../backup/file-backup-07-01-26_16_21_08.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_21_08.tar.gz
+[Wed Jul  1 16:21:09 UTC 2026] SUCCESS: Replicated to S3 Bucket (s3-new-bash-course-harpy) successfully
+[Wed Jul  1 16:22:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:22:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_22_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:22:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (27.3 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_22_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_22_01.tar.gz
+[Wed Jul  1 16:22:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:24:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:24:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_24_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:24:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (33.9 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_24_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_24_01.tar.gz
+[Wed Jul  1 16:24:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:26:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:26:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_26_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:26:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (30.6 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_26_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_26_01.tar.gz
+[Wed Jul  1 16:26:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:28:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:28:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_28_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:28:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (24.2 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_28_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_28_01.tar.gz
+[Wed Jul  1 16:28:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:30:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:30:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_30_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:30:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (16.8 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_30_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_30_01.tar.gz
+[Wed Jul  1 16:30:04 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:32:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:32:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_32_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:32:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (12.5 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_32_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_32_01.tar.gz
+[Wed Jul  1 16:32:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:34:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:34:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_34_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:34:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (30.4 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_34_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_34_01.tar.gz
+[Wed Jul  1 16:34:02 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:36:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:36:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_36_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:36:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (33.5 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_36_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_36_01.tar.gz
+[Wed Jul  1 16:36:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:38:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:38:02 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_38_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:38:02 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (35.9 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_38_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_38_01.tar.gz
+[Wed Jul  1 16:38:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:40:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:40:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_40_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:40:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (31.3 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_40_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_40_01.tar.gz
+[Wed Jul  1 16:40:04 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:42:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:42:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_42_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:42:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (8.7 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_42_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_42_01.tar.gz
+[Wed Jul  1 16:42:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:44:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:44:02 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_44_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:44:02 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (38.8 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_44_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_44_01.tar.gz
+[Wed Jul  1 16:44:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:46:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:46:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_46_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:46:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (38.4 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_46_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_46_01.tar.gz
+[Wed Jul  1 16:46:02 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:48:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:48:02 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_48_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:48:02 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (36.6 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_48_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_48_01.tar.gz
+[Wed Jul  1 16:48:04 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:50:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:50:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_50_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:50:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (25.3 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_50_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_50_01.tar.gz
+[Wed Jul  1 16:50:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:52:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:52:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_52_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:52:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (34.7 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_52_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_52_01.tar.gz
+[Wed Jul  1 16:52:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:54:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:54:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_54_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:54:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (21.1 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_54_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_54_01.tar.gz
+[Wed Jul  1 16:54:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:56:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:56:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_56_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:56:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (29.5 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_56_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_56_01.tar.gz
+[Wed Jul  1 16:56:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:58:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 16:58:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_58_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 16:58:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (31.0 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_16_58_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_58_01.tar.gz
+[Wed Jul  1 16:58:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 16:58:16 UTC 2026] INFO: Manual backup requested via Main Menu
+[Wed Jul  1 16:58:16 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_16_58_16.tar.gz
+Completed 3.1 KiB/3.1 KiB (38.5 KiB/s) with 1 file(s) remainingupload: ../backup/file-backup-07-01-26_16_58_16.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_16_58_16.tar.gz
+[Wed Jul  1 16:58:17 UTC 2026] SUCCESS: Replicated to S3 Bucket (s3-new-bash-course-harpy) successfully
+[Wed Jul  1 17:00:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 17:00:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_17_00_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 17:00:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (19.3 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_17_00_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_17_00_01.tar.gz
+[Wed Jul  1 17:00:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 17:02:02 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 17:02:02 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_17_02_02.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 17:02:02 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (38.8 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_17_02_02.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_17_02_02.tar.gz
+[Wed Jul  1 17:02:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 17:04:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 17:04:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_17_04_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 17:04:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (30.3 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_17_04_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_17_04_01.tar.gz
+[Wed Jul  1 17:04:02 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 17:06:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 17:06:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_17_06_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 17:06:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (28.1 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_17_06_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_17_06_01.tar.gz
+[Wed Jul  1 17:06:04 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 17:08:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 17:08:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_17_08_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 17:08:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (41.6 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_17_08_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_17_08_01.tar.gz
+[Wed Jul  1 17:08:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 17:10:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 17:10:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_17_10_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 17:10:01 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (33.8 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_17_10_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_17_10_01.tar.gz
+[Wed Jul  1 17:10:03 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
+[Wed Jul  1 17:12:01 UTC 2026] START: Creating local tar.gz backup...
+[Wed Jul  1 17:12:01 UTC 2026] SUCCESS: Local backup created at /home/ubuntu/bash-project/backup/file-backup-07-01-26_17_12_01.tar.gz
+--------------------------------------------------------
+[Wed Jul  1 17:12:02 UTC 2026] START: Uploading backup to AWS S3 (s3-new-bash-course-harpy)...
+Completed 3.1 KiB/3.1 KiB (37.9 KiB/s) with 1 file(s) remainingupload: ../home/ubuntu/bash-project/backup/file-backup-07-01-26_17_12_01.tar.gz to s3://s3-new-bash-course-harpy/file-backup-07-01-26_17_12_01.tar.gz
+[Wed Jul  1 17:12:04 UTC 2026] SUCCESS: File uploaded successfully to S3 bucket: s3-new-bash-course-harpy
