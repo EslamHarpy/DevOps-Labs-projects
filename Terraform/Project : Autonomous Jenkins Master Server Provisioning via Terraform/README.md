@@ -25,7 +25,7 @@ The environment is strictly modularized, separating networking layers from compu
 The blueprint below details the structural ingress flow, dynamic mapping limits, and the edge perimeter firewall rules:
 
 <p align="center">
-  <img src="./Screenshots/project-diagram" width="100%">
+  <img src="./Screenshots/project-diagram.png" width="100%">
   <br>
   <em><b>Figure 1:</b> Project Architecture</em>
 </p>
