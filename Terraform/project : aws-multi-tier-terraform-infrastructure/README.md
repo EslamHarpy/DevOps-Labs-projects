@@ -20,7 +20,7 @@ This project establishes a highly available, fault-tolerant, and secure multi-ti
 The system layout below illustrates end-to-end traffic management, defensive security boundaries, and localized subnet topologies:
 
 <p align="center">
-  <img src="./Screenshots/project_diagram.png" width="100%">
+  <img src="./Screenshots/project-diagram.png" width="100%">
   <br>
   <em><b>Figure 1:</b> System Architecture Diagram </em>
 </p>
