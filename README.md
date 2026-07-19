@@ -7,7 +7,9 @@
 3. [Project: Multi-Service CI CD Automation via Jenkins Shared Library](./Jenkins/Project-Multi-Service%20CI%20CD%20Automation%20via%20Jenkins%20Shared%20Library)
 
 ### Terraform 
-1. [Project-ShopFlow: Multi-Tier Cloud Infrastructure & CICD Pipeline](./Terraform/Project-ShopFlow%3A%20Multi-Tier%20Cloud%20Infrastructure%20%26%20CICD%20Pipeline/README.md)
+1. [Project : Autonomous Jenkins Master Server Provisioning via Terraform](./Terraform/Project%20%3A%20Autonomous%20Jenkins%20Master%20Server%20Provisioning%20via%20Terraform)
+2. [project : aws-multi-tier-terraform-infrastructure](./Terraform/project%20%3A%20aws-multi-tier-terraform-infrastructure)
+4. [Project-ShopFlow: Multi-Tier Cloud Infrastructure & CICD Pipeline](./Terraform/Project-ShopFlow%3A%20Multi-Tier%20Cloud%20Infrastructure%20%26%20CICD%20Pipeline/README.md)
 
 ### Docker
 1. [Task 1: Docker Static Web Server with Bind Mounts](./Docker/Task%201%3A%20Docker%20Static%20Web%20Server%20with%20Bind%20Mounts)
